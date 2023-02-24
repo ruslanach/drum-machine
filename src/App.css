@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+body {
+  font-family: Russo One;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  user-select: none;
+  background-color: lightblue;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.inner-container {
+  outline: 5px solid #4e446d;
+  position: relative;
+  width: 660px;
+  text-align: center;
+  background-color: lightskyblue;
+}
+.inner-container .pad-bank {
+  width: 332px;
+  height: 272px;
+  display: inline-block;
+  margin: 20px;
+}
+.inner-container .pad-bank .drum-pad {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 80px;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: deepskyblue 3px 3px 5px;
+    background-color: lightblue;
+  font-size: 1.5em;
+  color: #4e446d;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+
+
+
+.inner-container .controls-container .control p {
+  margin-bottom: 0;
+
+}
+.inner-container .controls-container #display {
+  width: 200px;
+  height: 50px;
+  background-color: deepskyblue;
+  margin: 15px auto;
+  padding: 5px;
+  box-sizing: border-box;
+  font-size: 1.5em;
+  color: #4e446d;
+}
+
+
+
+
+
+@media screen and (max-width: 650px) {
+  .inner-container {
+    transform: scale(0.7);
   }
 }
+
